@@ -1,0 +1,4 @@
+{
+    "fullName": .first_name + " " + .last_name,
+    "fullAddress": .address.street_address + ", " + .address.street_name + ", " + .address.city + ", " + .address.state + ", " + .address.country
+}

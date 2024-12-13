@@ -1,0 +1,24 @@
+- route:
+    id: route-1125
+    from:
+      id: from-1195
+      uri: timer:template
+      parameters:
+        period: "1000"
+        repeatCount: "1"
+      steps:
+        - to:
+            id: to-1604
+            uri: https://random-data-api.com/api/v2/users?size=1
+        - log:
+            id: log-2227
+            message: ${body}
+        - process:
+            id: process-2588
+        - to:
+            id: to-1003
+            uri: jslt:file://trans.json
+            parameters: {}
+        - log:
+            id: log-4171
+            message: ${body}
