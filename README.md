@@ -1,5 +1,5 @@
 
-# Apache Camel　/ JSLT Sample
+# Apache Camel / JSLT Sample
 
 ## 概要
 
