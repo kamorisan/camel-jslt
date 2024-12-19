@@ -13,12 +13,11 @@
         - log:
             id: log-2227
             message: ${body}
-        - process:
-            id: process-2588
         - to:
             id: to-1003
-            uri: jslt:file://trans.json
-            parameters: {}
+            uri: jslt
+            parameters:
+              resourceUri: file://mapping.json
         - log:
             id: log-4171
             message: ${body}
